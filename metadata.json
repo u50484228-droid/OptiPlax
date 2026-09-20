@@ -1,0 +1,6 @@
+{
+  "name": "OptiPlax Presell & Compliance Hub",
+  "description": "Google Ads compliant presell landing page and CRO conversion system for OptiPlax Vision Support Dietary Supplement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
