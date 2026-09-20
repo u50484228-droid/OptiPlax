@@ -97,6 +97,8 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 id="cta-comprar-2btl"
+                data-aff-track="true"
+                data-button-name="OptiPlax 2 Bottles Buy Now"
                 className="w-full mt-4 bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] hover:from-[#fde047] hover:to-[#b45309] text-slate-950 font-black text-lg py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 border border-amber-500/80 cursor-pointer select-none text-center"
               >
                 <ShoppingCart className="w-5 h-5 text-slate-900" />
@@ -172,6 +174,8 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 id="cta-comprar-6btl"
+                data-aff-track="true"
+                data-button-name="OptiPlax 6 Bottles Best Value Buy Now"
                 className="w-full mt-3 bg-gradient-to-b from-[#fcd34d] via-[#fbbf24] to-[#f59e0b] hover:from-[#fde047] hover:to-[#d97706] text-slate-950 font-black text-xl py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2 border-2 border-amber-500 cursor-pointer select-none text-center"
               >
                 <ShoppingCart className="w-6 h-6 text-slate-900" />
@@ -239,6 +243,8 @@ export const PricingSection: React.FC<PricingSectionProps> = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 id="cta-comprar-3btl"
+                data-aff-track="true"
+                data-button-name="OptiPlax 3 Bottles Most Popular Buy Now"
                 className="w-full mt-4 bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] hover:from-[#fde047] hover:to-[#b45309] text-slate-950 font-black text-lg py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 border border-amber-500/80 cursor-pointer select-none text-center"
               >
                 <ShoppingCart className="w-5 h-5 text-slate-900" />

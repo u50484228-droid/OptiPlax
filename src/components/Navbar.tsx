@@ -1,11 +1,10 @@
 import React from 'react';
-import { ShieldCheck } from 'lucide-react';
 
 interface NavbarProps {
-  onOpenCompliance: () => void;
+  onOpenCompliance?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenCompliance }) => {
+export const Navbar: React.FC<NavbarProps> = () => {
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200/80 shadow-xs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-18 sm:h-20 flex items-center justify-between">
@@ -38,17 +37,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCompliance }) => {
               FAQ
             </a>
           </nav>
-
-          {/* Compliance Inspector Trigger (Subtle pill for marketer review) */}
-          <button
-            type="button"
-            onClick={onOpenCompliance}
-            className="hidden sm:inline-flex items-center gap-1 text-[11px] font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300/60 rounded-full px-2.5 py-1 transition-colors"
-            title="Review Google Ads Compliance, Tags & Copywriting Dossier"
-          >
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Ads Audit</span>
-          </button>
 
           {/* Primary Action Button - EXACT match to Image 1: Dark Navy Pill "Order Now" */}
           <a

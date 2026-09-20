@@ -14,12 +14,10 @@ import { FaqSection } from './components/FaqSection';
 import { ScientificReferencesSection } from './components/ScientificReferencesSection';
 import { Footer } from './components/Footer';
 import { StickyMobileCta } from './components/StickyMobileCta';
-import { ComplianceModal } from './components/ComplianceModal';
 import { IngredientsPage } from './components/IngredientsPage';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<'home' | 'ingredients'>('home');
-  const [isComplianceOpen, setIsComplianceOpen] = useState<boolean>(false);
 
   // Sync with window location if user arrives with #ingredients-page or similar
   useEffect(() => {
@@ -52,7 +50,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900 flex flex-col font-['Plus_Jakarta_Sans',sans-serif]">
       {/* Top Header - Exact match to Image 1 */}
-      <Navbar onOpenCompliance={() => setIsComplianceOpen(true)} />
+      <Navbar />
 
       {/* Main Presell Sales Stream matching the real reference photos */}
       <main className="flex-1">
@@ -83,12 +81,6 @@ export default function App() {
 
       {/* Sticky Mobile CRO Conversion Bar */}
       <StickyMobileCta />
-
-      {/* Media Buyer & Google Ads Compliance Suite */}
-      <ComplianceModal
-        isOpen={isComplianceOpen}
-        onClose={() => setIsComplianceOpen(false)}
-      />
     </div>
   );
 }
