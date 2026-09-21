@@ -90,7 +90,12 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ pkg, onClose }) =>
             href={pkg.checkoutUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={onClose}
+            onClick={() => {
+              if (typeof (window as any).gtag_report_conversion === 'function') {
+                (window as any).gtag_report_conversion();
+              }
+              onClose();
+            }}
             className="w-full py-3.5 px-6 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-extrabold text-base tracking-wide flex items-center justify-center gap-2 shadow-md transition-all active:scale-95"
           >
             <span>Continue to Official Secure Order Form</span>
